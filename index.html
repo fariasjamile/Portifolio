@@ -2,67 +2,72 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv=" X-UA-Compatible" content="IE= edge">
-    <meta name="viewport" content="width=device-width, initial-scale="1.0">
-    <link rel="icon" type="image/png" href="assets/images/goku_ico.png">
-    <title> Portifolio da Jamile </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type = "image/pmg" href="assets/images/goku_ico.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Portifílio</title>
 </head>
-    
-    <body>
-        <!-- Menu da pagina-->
-        <nav> 
+<body>
+    <!-- Menu da Página -->
+    <nav>
+        <!-- Logo + Texto à esquerda do Menu -->
+        <div class="logo" >
+            <img class= "icone" src="assets/images/goku_ico.png" alt="Logo da página - Goku">
+            <span class="titulo">Portfólio</span>
+        </div>
+        <!-- Opções do Menu utilizando Marcadores não ordenados (simbólico)-->
+        <ul>
+            <a href="index.html">
+                 <li>Home</li>
+            </a>
+            <a href="#perfil">
+                 <li>Sobre Mim</li>
+            </a>
+            <a href="#video">
+                 <li>Video de Apresentação</li>
+            </a>
+            <a href="contato.html">
+                 <li>Contato</li>
+            </a>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo da Página -->
+    <main>
+        <h1 id="perfil">Sobre Jamile:</h1>
+        <section  id="sobre">
             <div>
-            <img src="assets/images/goku_ico.png" alt="Logo da Pagina - Goku">
-            <span>Portifolio</span>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium necessitatibus accusamus dolorem tempore natus repudiandae, sapiente numquam? Nulla debitis, similique possimus laborum deleniti rerum, quis, reprehenderit quas id consectetur aliquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, itaque! Fuga voluptas voluptatibus autem libero maiores cum laudantium, quia repellendus officia odit minima, eum, hic est! Commodi nobis quos doloremque.</p>
             </div>
+            <img class="foto" src="assets/images/goku.jpg" alt="Oi, eu sou a Yngrid!">
+        </section>
 
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#perfil">Sobre</a></li>
-              <li><a href="#video">Vídeo</a></li>
-              <li><a href="contato.html">Contato</a></li>
-            </ul>
-
-            <ul>
-                <li>Home</li>
-                <li>Sobre</li>
-                <li>Vídeo</li>
-                <li>Contato</li>
-            </ul>
-        </nav>
-
-        <!-- Conteudo da pagina-->
-        <main>
-          <h1 id="perfil"> Sobre a Jamile:</h1>
-          <section>
-            <div> 
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, velit nulla! Nobis pariatur repellendus et libero, nemo perferendis velit eius nesciunt dicta non incidunt quasi, sed id saepe aperiam perspiciatis!</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, velit nulla! Nobis pariatur repellendus et libero, nemo perferendis velit eius nesciunt dicta non incidunt quasi, sed id saepe aperiam perspiciatis!</p>
+        <h1 id="video">Vídeo:</h1>
+        <section id="video">
+            <div class="videoTitulo">
+              <h3>Vídeo do Momento</h3>
             </div>
-            <img src="assets/images/goku.jpg" alt="Oi! ">
-          </section>
-          <h1 id="video">Vídeo:</h1>
-          <section>
-            <h2> Vídeo do Momento </h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/EzN5SW2QOWY" 
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-          </section>
-        </main>
+            <div>
+              <iframe class="video" width="800" height="300" src="https://www.youtube.com/embed/EzN5SW2QOWY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
 
-        <!-- Rodapé da pagina-->
-        <footer>
-          <div> 
-            <a href="https://www.linkedin.com/in/jamilefarias/" targed="_blank">
-            <img src="assets/images/linkedin.png" alt="">
+    <!-- Rodapé da Página -->
+    <footer>
+      <a href="https://www.linkedin.com/in/jamilefarias/" targed="_blank">
+        <img src="assets/images/linkedin.png" alt="">
 
-            <a href="https://github.com/fariasjamile" targed="_blank"></a>
-            <img src= "assets/images/github.png" alt="">
+        <a href="https://github.com/fariasjamile" targed="_blank"></a>
+        <img src= "assets/images/github.png" alt="">
 
-            <a href="https://www.instagram.com/_jamilefarias/" targed="_blank"></a>
-            <img src="assets/images/instagram.png" alt="">
-          </div>
-          <p> Desenvolvido por: Jamile Farias - 2023 &copy;</p>
-        </footer>
-    </body>
+        <a href="https://www.instagram.com/_jamilefarias/" targed="_blank"></a>
+        <img src="assets/images/instagram.png" alt="">
+      </div>
+      <p> Desenvolvido por: Jamile Farias - 2023 &copy;</p>
+    </footer>
+</body>
+</body>
+</html>

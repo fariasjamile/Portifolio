@@ -2,79 +2,72 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv=" X-UA-Compatible" content="IE= edge">
-    <meta name="viewport" content="width=device-width, initial-scale="1.0">
-    <link rel="icon" type="image/png" href="assets/images/goku_ico.png">
-    <title> Portifolio da Jamile </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type = "image/pmg" href="assets/images/goku_ico.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Portifílio</title>
 </head>
-    
-    <body>
-        <!-- Menu da pagina-->
-        <nav> 
+<body>
+    <!-- Menu da Página -->
+    <nav>
+        <!-- Logo + Texto à esquerda do Menu -->
+        <div class="logo" >
+            <img class= "icone" src="assets/images/goku_ico.png" alt="Logo da página - Goku">
+            <span class="titulo">Portfólio</span>
+        </div>
+        <!-- Opções do Menu utilizando Marcadores não ordenados (simbólico)-->
+        <ul>
+            <a href="index.html">
+                 <li>Home</li>
+            </a>
+            <a href="#perfil">
+                 <li>Sobre</li>
+            </a>
+            <a href="#video">
+                 <li>Video</li>
+            </a>
+            <a href="contato.html">
+                 <li>Contato</li>
+            </a>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo da Página -->
+    <main>
+        <h1 id="perfil">Sobre Jamile:</h1>
+        <section  id="sobre">
             <div>
-            <img src="assets/images/goku_ico.png" alt="Logo da Pagina - Goku">
-            <span>Portifolio</span>
-            </div>   
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-            <ul>
-                <li>Home</li>
-                <li>Sobre</li>
-                <li>Vídeo</li>
-                <li>Contato</li>
-            </ul>
-        </nav>
-                <main class="contato">
-                    <section class="formulario">
-                        <h3>Contato</h2>
-                <form>
-                    <div class="campos-form">
-            <label for="nome">Nome:</label>
-            <input id="nome" type="text" placeholder="Insira o seu nome completo">
-            <div id="txtnome"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium necessitatibus accusamus dolorem tempore natus repudiandae, sapiente numquam? Nulla debitis, similique possimus laborum deleniti rerum, quis, reprehenderit quas id consectetur aliquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, itaque! Fuga voluptas voluptatibus autem libero maiores cum laudantium, quia repellendus officia odit minima, eum, hic est! Commodi nobis quos doloremque.</p>
             </div>
-        <div>
-            <div class="campos-form">
-            <label for="email">Email:</label>
-            <input id="email" type="text"
-             placeholder="Insira o seu Email">
-            <div id="txtemail"></div>
+            <img class="foto" src="assets/images/goku.jpg" alt="Oi, eu sou a Jamile!">
+        </section>
+
+        <h1 id="video">Vídeo:</h1>
+        <section id="video">
+            <div class="videoTitulo">
+              <h3>Vídeo do Momento</h3>
             </div>
-        <div>
-            <div class="campos-form">
-            <label for="mensagem">Mensagem:</label>
-            <input id="mensagem" type="text"
-             placeholder="Insira a sua imagem">
-            <div id="txtmensagem"></div>
+            <div>
+              <iframe class="video" width="800" height="300" src="https://www.youtube.com/embed/EzN5SW2QOWY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
+        </section>
+    </main>
 
-            <button type="button" onclick="enviarForm()">
-                Enviar
-            </button>
+   <!-- Rodapé da Página -->
+   <footer>
+    <a href="https://www.linkedin.com/in/jamilefarias/" targed="_blank">
+      <img src="assets/images/linkedin.png" alt="">
 
-            <h3>Consulta de CEP</h1>
-	<form action="http://viacep.com.br/ws/" method="GET">
-		<label for="cep">Digite o CEP desejado:</label>
-		<input type="text" id="cep" name="cep" required>
-		<br><br>
-		<input type="submit" value="Consultar">
-	</form>
+      <a href="https://github.com/fariasjamile" targed="_blank"></a>
+      <img src= "assets/images/github.png" alt="">
 
-        <!-- Rodapé da pagina-->
-        <footer>
-          <div> 
-            <a href="https://www.linkedin.com/in/jamilefarias/" targed="_blank">
-                <img src="assets/images/linkedin.png" alt="">
-    
-                <a href="https://github.com/fariasjamile" targed="_blank"></a>
-                <img src= "assets/images/github.png" alt="">
-    
-                <a href="https://www.instagram.com/_jamilefarias/" targed="_blank"></a>
-                <img src="assets/images/instagram.png" alt="">
-          </div>
-          <p> Desenvolvido por: Jamile Farias - 2023 &copy;</p>
-        </footer>
-    </body>
-    <html>
+      <a href="https://www.instagram.com/_jamilefarias/" targed="_blank"></a>
+      <img src="assets/images/instagram.png" alt="">
+    </div>
+    <p> Desenvolvido por: Jamile Farias - 2023 &copy;</p>
+  </footer>
+
+</body>
+</html>
