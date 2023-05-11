@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:wght@100;500&display=swap%27');
 
 :root{
-    --backgroung-body : #FFF9E7;
-    --backgroung-nav : #827191;
-    --backgroung-footer : #000000;
+    --backgroung-body : #f9f9f9;
+    --backgroung-nav : #8e49ca;
+    --backgroung-footer : #ccaf0c8a;
     --sombra-nav : #3f3f3f;
 }
 
@@ -41,7 +41,7 @@ h2{
 
 h3{
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 a{
@@ -101,7 +101,7 @@ ul{ /*muda portifolio*/
 
 nav a{ /* nav a- muda tudo dentro da caixa nav*/
     color: white;
-
+      
 }
 main{
     width: 80vw;
@@ -136,36 +136,32 @@ main{
     margin-top: 1rem;
     padding: 2rem 1rem;;
 }
+    footer{
+        margin: 0 auto;
+        margin-top: 5rem;
+        width: 80vw;
+        text-align: center;
+        background-color: var(--background-footer);
+        border-radius: 16px;
+    }
+    
+    .redes_sociais{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .icons{
+    
+        width: 2.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .by{
+        padding-bottom: 1rem;
+        color: #8e49ca;
+    }
 
-footer{
-    width: 80vw;
-    margin: 0 auto;
-    padding-top: 2rem;
-    padding-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--backgroung-footer);
-}
-
-.redes_sociais {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.by {
-    display: flex;
-    padding-top: 0.25rem;
-    color: yellow;
-}
-
-.icons {
-    width: 50px;
-    padding: 0 0.5rem;
-}
 
 /*Estilizar o Formulário*/
 
