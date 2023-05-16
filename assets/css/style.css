@@ -1,35 +1,35 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Roboto:wght@100;500&display=swap%27');
 
 :root{
-    --backgroung-body : #f9f9f9;
-    --backgroung-nav : #8e49ca;
-    --backgroung-footer : #ccaf0c8a;
-    --sombra-nav : #3f3f3f;
+    --background-body: #d6d1d6;
+    --background-nav: #bac1ed;
+    --background-footer:#bac1ed;
+    --sombra: grey;
 }
 
 *{
-    margin : 0;
-    padding: 0;
-    box-sizing: border-box; /*zera altura e largura das propriedades do navegador*/
+    margin: 0; /* tira a margem da página*/
+    padding: 0; /*espaçamento entre os objetos*/
+    box-sizing: border-box; /*zera altura e largura*/
 }
-p{ /* font family e margin rem dentro do p define tamanho relacionado a fonte do navegador define a fonte do paragrafo*/
-    font-family:  'lato', Roboto;
-    margin-bottom: 1.5rem;
+
+p{
+    font-family: 'lato', Roboto; /*definindo a fonte utilizada no parágrafo*/
+    margin-bottom: 1.5rem; /*margem inferior (24px)*/
 }
 
 h1,
 h2,
 h3,
 a{
-    font-family:  'lato', cursive;
-    letter-spacing: 3px;
-    font-weight: 800;
-    color: var(--backgroung-footer);
+    font-family: 'lato', cursive;
+    letter-spacing: 3px; 
+    font-weight: 1000;
+    color: black;
 }
 
 h1{
-    font-size: 2rem; /*equivale a 32px*/
+    font-size: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: left;
@@ -37,41 +37,43 @@ h1{
 
 h2{
     font-size: 2rem;
+    /*padding: 2rem;*/
 }
 
 h3{
-    font-size: 1.5rem;
-    margin-bottom: 4rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 a{
-    text-decoration: none; /*tira o sublinhado do link*/
+    text-decoration: none;
 }
 
 h2,
 h3{
-    text-align: center; /*centralizado h2 e h3*/
+    text-align: center;
 }
-
 
 body{
-    background-color: var(--backgroung-body);
+    background-color: var(--background-body); /*altera cor de fundo*/
 }
+
 
 nav{
-    margin: 0 auto; /*margin superior e inferior 0 e o restante automatico*/
-    width: 80vw;
-    background-color: var(--backgroung-nav);
+    margin: 0 auto;
+    width: 80vw; 
+    background-color: var(--background-nav);
     display: flex;
-    justify-content: space-between; /*espaço entre os elementos*/
-    font-size: 1.5rem;
-    padding: 2.25rem 1.5rem;  /*espaçamento entre o texto e a caixa*/
-    box-shadow: 2px 2px 5px var(--sombra-nav);
+    justify-content: space-between;
+    font-size: 1.5rem; 
+    padding: 2.25rem 1.5rem;
+    box-shadow: 2px 2px 5px var(--sombra);
+    border-radius: 16px;
 }
-
+   
 .logo{
-    display: flex; /*movimentar caixa na tela*/
-    width: 20%;
+    display: flex;
+    width: 50%; /*tamanho logo (nome)*/
     justify-content: left;
     position: relative;
     align-items: center;
@@ -79,30 +81,31 @@ nav{
 
 .icone{
     width: 5rem;
-    display: flex;
-    padding-left: 1rem;
-}
-.titulo{
-    font-family: 'lato', cursive;
-    color:white;
-    font-size: 1.5rem;
-    letter-spacing: 3px;
-    font-weight: 800;
+    padding-left: 1rem;  
 }
 
-ul{ /*muda portifolio*/
-    list-style: none; 
+.titulo{
+    font-family:'lato', cursive;
+    color: black;
+    font-size: 1.8rem;
+    letter-spacing: 3px ;
+    font-weight: 800;
+    padding-left: 2rem;
+}
+
+ul{
+    list-style: none; /*lista sem marcadores(menu)*/
     align-items: center;
     display: flex;
     gap: 1rem;
-    font-size: 24px; /* 24px -mesma coisa de colocar 1.5rem*/
+    font-size: px;
     color: white;
 }
 
-nav a{ /* nav a- muda tudo dentro da caixa nav*/
-    color: white;
-      
+nav a{
+    color: black;
 }
+
 main{
     width: 80vw;
     margin: 0 auto;
@@ -112,128 +115,174 @@ main{
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color: #F8CD53;
-    border-radius: 16px; /*borda arredondada*/
-    gap: 20px; /*espaço entre texto e imagem*/
+    background-color: #e8d9ea;
+    border-radius: 16px;  /*arredondar bordas da caixa (sobre mim)*/
+    gap: 20px; /*espaço entre o texto e a imagem (sobre mim)*/
+    font-family: 'lato', cursive;
+    font-size: 1.25rem;
+    font-weight: 500;
 }
+
 
 .foto{
     width: 200px;
     border-radius: 20px;
-    box-shadow: 2px 2px 5px var(--sombra-nav);
+    box-shadow: 2px 2px 5px var(--sombra);
 }
 
-#meu_video {
-    margin-bottom: 2rem;
-}
-
-.video {
-    width: 60vw;
-    aspect-ratio: 16/10;
+#videoyt{
+    display: flex;
     margin: 0 auto;
-    display: block;
+    width: 60%;
+    gap: 2rem;
     border-radius: 8px;
-    margin-top: 1rem;
-    padding: 2rem 1rem;;
 }
-    footer{
-        margin: 0 auto;
-        margin-top: 5rem;
-        width: 80vw;
-        text-align: center;
-        background-color: var(--background-footer);
-        border-radius: 16px;
-    }
-    
-    .redes_sociais{
-        display: flex;
-        justify-content: center;
-    }
-    
-    .icons{
-    
-        width: 2.5rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-    
-    .by{
-        padding-bottom: 1rem;
-        color: #8e49ca;
-    }
 
+footer{
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 80vw;
+    text-align: center;
+    background-color: var(--background-footer);
+    border-radius: 16px;
+}
+
+.redes_sociais{
+    display: flex;
+    justify-content: center;
+}
+
+.icons{
+    
+    width: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.by{
+    padding-bottom: 1rem;
+    color: black;
+}
 
 /*Estilizar o Formulário*/
+
+.contato{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    padding: 40px;
+}
+
+/*.endereco{
+    font-family: 'lato' Roboto;
+    color: gray;
+    font-size: 1rem;
+
+}*/
+
+.formulario{
+    width: 50%;
+}
 
 hr{
     margin: 1rem;
 }
 
-.contato {
-    display: flex;
-    gap: 3rem;
-    justify-content: center;
-    padding: 40px
-}
-
-.endereco {
-    font-family: 'lato', Roboto;
-    color: var(--backgroung-footer);
-    font-size: 1rem;
-}
-
-.formulario {
-    width: 50%;
-}
-
 label{
-    font-family: 'lato', Roboto;
-    color:rgb(168, 45, 45);
+    font-family: 'lato' Roboto;
+    color: black;
     font-size: 1.25rem;
 }
 
 input,
 textarea,
 button{
-    font-family:  'lato', Roboto;
+    font-family: 'lato', Roboto;
     width: 100%;
     margin-top: 0.25rem;
     padding: 0.5rem 1rem;
     border-radius: 8px;
     font-size: 1.25rem;
-    color:#827191;
-
+    color: black;
 }
 
 button{
-    font-family:  'lato', Roboto;
-    background-color: var(--backgroung-nav);
+    font-family: 'lato' Roboto;
+    background-color: var(--background-nav);
     font-weight: 800;
     color: white;
 }
 
-button:hover{ /*quando o mouse passar em cima muda de cor*/
-background-color: navy;
-}
-
-input::placeholder,
-textarea::placeholder{ /*mudar cor quando mouse mexe dentro da caixa ::*/
-    color: var(--backgroung-nav)
+button:hover{
+    background-color: gray;
 }
 
 input,
-textarea {
-    border: 1px solid navy;
+textarea::placeholder{
+    color: var(gray);
 }
-
 
 .campos-form {
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
-@media (max-width: 1000px) {
+/*responsividade*/
+
+@media(max-width: 1000px){
+
+    nav{
+        width: 100vw;
+        flex-direction: column;
+        row-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.25rem;
+    }
+
+    .logo {
+        width: 100vw;
+    }
+
+    .titulo{
+        text-align: center;
+    }
+
+    main{   
+        width: 95vw;
+    }
+
     #sobre {
         flex-direction: column-reverse;
     }
 
+    .foto {
+        margin-top: 1rem;
+    }
+
+    #meu_video {
+        width: 95vw;
+    }
+
+    .video {
+        width: 95vw;
+    }
+
+    footer{
+        width: 100vw;
+    }
+
+    .by {
+        font-size: 1rem;
+    }
+
+    #contato {
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    #formulario_mensagem,
+    #formulario_buscacep {
+        width: 85vw;
+        margin: 0 auto;
+    }
 }
