@@ -259,7 +259,7 @@ textarea::placeholder{
         margin-top: 1rem;
     }
 
-    #meu_video {
+    /* #meu_video {
         width: 95vw;
     }
 
@@ -273,15 +273,14 @@ textarea::placeholder{
 
     .by {
         font-size: 1rem;
-    }
+    } */
 
     #contato {
         width: 100vw;
         flex-direction: column;
     }
 
-    #formulario_mensagem,
-    #formulario_buscacep {
+    #formulario_mensagem {
         width: 85vw;
         margin: 0 auto;
     }
